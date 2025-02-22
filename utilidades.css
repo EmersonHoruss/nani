@@ -1,47 +1,48 @@
-.header {
-  background-color: white;
-  padding-bottom: 1rem !important;
-  padding: 0 4px;
+.after-fixed {
+  padding-top: 9.5rem;
 }
 
-.my-navbar {
+.center {
   display: flex;
-  gap: 1rem;
-  width: 100%;
+  justify-content: center;
   align-items: center;
-  max-width: calc(100vw - 1rem);
 }
 
-.menu-items {
-  margin-top: 1rem;
+.force-button-height {
+  height: 37.6px;
+}
+
+.flex {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
-.menu-item {
-  text-decoration: none;
-  font-size: 1rem;
-  color: green;
-  font-weight: 700;
+.gap-6 {
+  gap: 6px;
 }
 
-.no-mb {
+.padding-top-8 {
+  padding-top: 8px;
+}
+
+.padding-top-12 {
+  padding-top: 12px;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.display-992 {
   display: none;
 }
 
 /* Pantallas iguales o mayores a 576px (pequeño - sm) */
 /* Añade aquí los estilos para pantallas pequeñas */
 @media (min-width: 576px) {
-  .mb {
-    display: none;
-  }
-
-  .no-mb {
-    display: block;
-    padding: 0 1.5rem;
-  }
 }
 
 /* Pantallas iguales o mayores a 768px (mediano - md) */
@@ -52,6 +53,9 @@
 /* Pantallas iguales o mayores a 992px (grande - lg) */
 /* Añade aquí los estilos para pantallas grandes */
 @media (min-width: 992px) {
+  .display-992 {
+    display: block;
+  }
 }
 
 /* Pantallas iguales o mayores a 1200px (extra grande - xl) */
