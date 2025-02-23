@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="carrosel.css" />
     <link rel="stylesheet" href="utilidades.css" />
   </head>
 
@@ -170,8 +171,77 @@
           <a class="menu-item" href="./encuentranos.html">Encuentranos</a>
         </div>
       </div>
+
+      <!-- CARROSEL -->
+      <div class="carrosel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img
+                src="./imagenes/anything/bebe.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="./imagenes/anything/about.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <div class="img-container">
+                <img
+                  src="./imagenes/anything/contactos.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./imagenes/anything/central.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>asdf</p>
     </div>
 
+    <script src="./main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

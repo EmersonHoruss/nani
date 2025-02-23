@@ -1,0 +1,82 @@
+.carrosel {
+  max-height: 200px;
+  padding: 0 4px;
+  border-radius: 1rem;
+  background-color: red;
+}
+
+.carrosel img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  object-position: center;
+  max-height: 200px;
+}
+
+@media (min-width: 420px) {
+  .carrosel {
+    max-height: 255px;
+  }
+
+  .carrosel img {
+    max-height: 255px;
+  }
+}
+
+/* Pantallas iguales o mayores a 576px (pequeño - sm) */
+/* Añade aquí los estilos para pantallas pequeñas */
+@media (min-width: 576px) {
+  .carrosel {
+    padding: 0 1.5rem;
+    background-color: red;
+  }
+
+  .carrosel {
+    max-height: 350px;
+  }
+
+  .carrosel img {
+    max-height: 350px;
+  }
+}
+
+/* Pantallas iguales o mayores a 768px (mediano - md) */
+/* Añade aquí los estilos para pantallas medianas */
+@media (min-width: 768px) {
+  .carrosel {
+    max-height: 500px;
+  }
+
+  .carrosel img {
+    max-height: 500px;
+  }
+}
+
+/* Pantallas iguales o mayores a 992px (grande - lg) */
+/* Añade aquí los estilos para pantallas grandes */
+@media (min-width: 992px) {
+  .display-992 {
+    display: block;
+  }
+
+  .carrosel {
+    max-height: 550px;
+  }
+
+  .carrosel img {
+    max-height: 550px;
+  }
+}
+
+/* Pantallas iguales o mayores a 1200px (extra grande - xl) */
+/* Añade aquí los estilos para pantallas extra grandes */
+@media (min-width: 1200px) {
+  .carrosel {
+    max-height: 650px;
+  }
+
+  .carrosel img {
+    max-height: 650px;
+  }
+}
