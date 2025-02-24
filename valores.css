@@ -3,4 +3,76 @@
   width: 100%;
   padding: 0 4px;
   display: flex;
+  flex-direction: column;
+}
+
+.valores-title {
+  font-size: 1.8rem;
+  color: green;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.valores-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.valores-item {
+  width: 300px;
+  text-align: center;
+}
+
+.valores-item-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.valores-item-img img {
+  width: 150px;
+  height: 150px;
+}
+
+.valores-item-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+}
+
+.valores-item-line-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.valores-item-line {
+  display: block;
+  height: 4px;
+  border-radius: 1rem;
+  width: calc(100% - 30%);
+  background-color: rgb(180, 171, 171);
+}
+
+@media (min-width: 576px) {
+  .valores {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Pantallas iguales o mayores a 768px (mediano - md) */
+/* Añade aquí los estilos para pantallas medianas */
+@media (min-width: 768px) {
+}
+
+/* Pantallas iguales o mayores a 992px (grande - lg) */
+/* Añade aquí los estilos para pantallas grandes */
+@media (min-width: 992px) {
+}
+
+/* Pantallas iguales o mayores a 1200px (extra grande - xl) */
+/* Añade aquí los estilos para pantallas extra grandes */
+@media (min-width: 1200px) {
 }
