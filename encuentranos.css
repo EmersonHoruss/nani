@@ -1,0 +1,160 @@
+.mapa {
+  max-height: 200px;
+  padding: 0 4px;
+  border-radius: 1rem;
+}
+
+.mapa img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  object-position: center;
+  max-height: 200px;
+}
+
+.line {
+  margin-top: 4.5rem;
+  height: 2px;
+  width: 100%;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-line {
+  background-color: rgba(234, 228, 228, 0.501);
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.galeria-la-central {
+  margin-top: 4.5rem;
+  padding: 0 4px;
+  width: 100%;
+}
+
+.galeria-la-central-titulo {
+  color: green;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.galeria-la-central-contenido {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.galeria-la-central-direccion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.galeria-la-central-img,
+.galeria-la-central-img img {
+  border-radius: 2rem;
+}
+
+.galeria-la-central-img img {
+  width: 350px;
+  height: 350px;
+}
+
+@media (min-width: 420px) {
+  .mapa {
+    max-height: 255px;
+  }
+
+  .mapa img {
+    max-height: 255px;
+  }
+}
+
+/* Pantallas iguales o mayores a 576px (pequeño - sm) */
+/* Añade aquí los estilos para pantallas pequeñas */
+@media (min-width: 576px) {
+  .mapa,
+  .line,
+  .galeria-la-central {
+    padding: 0 1.5rem;
+  }
+
+  .mapa {
+    max-height: 350px;
+  }
+
+  .mapa img {
+    max-height: 350px;
+  }
+
+  .galeria-la-central-contenido {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .galeria-la-central-img {
+    max-width: 300px;
+  }
+
+  .galeria-la-central-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Pantallas iguales o mayores a 768px (mediano - md) */
+/* Añade aquí los estilos para pantallas medianas */
+@media (min-width: 768px) {
+  .mapa {
+    max-height: 500px;
+  }
+
+  .mapa img {
+    max-height: 500px;
+  }
+}
+
+/* Pantallas iguales o mayores a 992px (grande - lg) */
+/* Añade aquí los estilos para pantallas grandes */
+@media (min-width: 992px) {
+  .mapa {
+    max-height: 550px;
+  }
+
+  .mapa img {
+    max-height: 550px;
+  }
+
+  .galeria-la-central-contenido {
+    gap: 4rem;
+  }
+
+  .galeria-la-central-img {
+    max-width: 900px;
+  }
+}
+
+/* Pantallas iguales o mayores a 1200px (extra grande - xl) */
+/* Añade aquí los estilos para pantallas extra grandes */
+@media (min-width: 1200px) {
+  .mapa {
+    max-height: 650px;
+  }
+
+  .mapa img {
+    max-height: 650px;
+  }
+}
