@@ -1,7 +1,19 @@
 .los-mas-vendidos {
-  margin-top: 1rem;
+  margin-top: 4.5rem;
   width: 100%;
   padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.los-mas-vendidos .title {
+  font-size: 1.8rem;
+  color: green;
+  font-weight: 600;
+}
+
+.los-mas-vendidos-carousel {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
