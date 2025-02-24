@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nosotros</title>
-  <link
+    <meta charset="utf-8" />
+    <title>index.html</title>
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -15,27 +14,111 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icon@1.7.2/font/bootstrap-icons-css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="utilidades.css" />
   </head>
+
   <body>
     <div class="page-wrapper">
-      <!-- HEADER -->
-      <div class="header fixed-top aux-padding">
-        <div class="my-navbar">
+      <!-- MOBILE HEADER -->
+      <div class="header fixed-top mb">
+        <div class="my-navbar padding-top-8 flex-space-between">
           <!-- LOGO -->
           <div class="menu-logo">
             <a href="./index.html">
               <img
                 src="./imagenes/logos/logo_color_v1.svg"
                 alt="danielito logo"
+                class="brand-size"
+              />
+            </a>
+          </div>
+
+          <div class="flex gap-6">
+            <!-- INICIAR SESION -->
+            <div class="menu-loggin">
+              <button class="btn btn-primary force-button-height">
+                <div class="center">
+                  <img
+                    src="./imagenes/iconos/usuario.svg"
+                    alt="icono de inicio de sesión"
+                    class="icon-size"
+                  />
+                </div>
+              </button>
+            </div>
+
+            <!-- CARRITO DE COMPRAS -->
+            <div class="menu-carrito">
+              <button type="button" class="btn btn-outline position-relative">
+                <img
+                  src="./imagenes/iconos/carrito_de_compra.svg"
+                  alt="icono de carrito de compras"
+                  class="icon-size"
+                />
+                <!-- <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1
+                  <span class="visually-hidden">unread messages</span>
+                </span> -->
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUSCAR -->
+        <div class="menu-search padding-top-8">
+          <div class="input-group">
+            <span class="input-group-text">
+              <img
+                src="./imagenes/iconos/lupa.svg"
+                class="icon-size"
+                alt="icono de buscar"
+              />
+            </span>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Buscar"
+              placeholder="Buscar"
+            />
+          </div>
+        </div>
+
+        <div class="menu-items">
+          <a class="menu-item" href="./bebes.html">Bebes</a>
+          <a class="menu-item" href="./ninos.html">Niños</a>
+          <a class="menu-item" href="./ninas.html">Niñas</a>
+          <a class="menu-item my-active" href="./nosotros.html">Nosotros</a>
+          <a class="menu-item" href="./encuentranos.html"> Encuentranos </a>
+        </div>
+      </div>
+
+      <!-- NO MOBILE HEADER -->
+      <div class="header fixed-top no-mb">
+        <div class="my-navbar padding-top-8 flex-space-between">
+          <!-- LOGO -->
+          <div class="menu-logo">
+            <a href="./index.html">
+              <img
+                src="./imagenes/logos/logo_color_v1.svg"
+                alt="danielito logo"
+                class="brand-size"
               />
             </a>
           </div>
 
           <!-- BUSCAR -->
-          <div class="menu-search">
+          <div class="menu-search flex-grow">
             <div class="input-group">
               <span class="input-group-text">
-                <img src="./imagenes/iconos/lupa.svg" alt="icono de buscar" />
+                <img
+                  src="./imagenes/iconos/lupa.svg"
+                  class="icon-size"
+                  alt="icono de buscar"
+                />
               </span>
               <input
                 type="text"
@@ -46,93 +129,52 @@
             </div>
           </div>
 
-          <!-- INICIAR SESION -->
-          <div class="menu-loggin">
-            <button class="btn btn-primary">
-              <img
-                src="./imagenes/iconos/usuario.svg"
-                alt="icono de inicio de sesión"
-              />
-              Iniciar sesión
-            </button>
-          </div>
+          <div class="flex gap-6">
+            <!-- INICIAR SESION -->
+            <div class="menu-loggin">
+              <button class="btn btn-primary force-button-height">
+                <div class="center flex">
+                  <img
+                    src="./imagenes/iconos/usuario.svg"
+                    alt="icono de inicio de sesión"
+                    class="icon-size"
+                  />
+                  <span class="display-992">Iniciar sesión</span>
+                </div>
+              </button>
+            </div>
 
-          <!-- CARRITO DE COMPRAS -->
-          <div class="menu-carrito">
-            <button type="button" class="btn btn-outline position-relative">
-              <img
-                src="./imagenes/iconos/carrito_de_compra.svg"
-                alt="icono de carrito de compras"
-              />
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-              >
-                1
-                <span class="visually-hidden">unread messages</span>
-              </span>
-            </button>
+            <!-- CARRITO DE COMPRAS -->
+            <div class="menu-carrito">
+              <button type="button" class="btn btn-outline position-relative">
+                <img
+                  src="./imagenes/iconos/carrito_de_compra.svg"
+                  alt="icono de carrito de compras"
+                  class="icon-size"
+                />
+                <!-- <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1
+                  <span class="visually-hidden">unread messages</span>
+                </span> -->
+              </button>
+            </div>
           </div>
         </div>
+
         <div class="menu-items">
           <a class="menu-item" href="./bebes.html">Bebes</a>
           <a class="menu-item" href="./ninos.html">Niños</a>
           <a class="menu-item" href="./ninas.html">Niñas</a>
-          <a class="menu-item" href="./nosotros.html">Nosotros</a>
-          <a class="menu-item" href="./encuentranos.html">Encuentranos</a>
+          <a class="menu-item my-active" href="./nosotros.html">Nosotros</a>
+          <a class="menu-item" href="./encuentranos.html"> Encuentranos </a>
         </div>
       </div>
 
-      <div class="after-fixed"></div>
-		
-     <!-- INTRODUCCIÓN -->
-      <div>
-		  <div class="los-mas-vendidos aux-margin gap-bottom">
-        <span class="title">¿Quienes somos?</span>
-			  
-			   	<div class="card d-block w-50">
+      <div></div>
 
-                  <img
-                    src="imagenes/los_mas_vendidos/quienes_preview_rev_1.png"
-					   class="d-block w-100"
-                    alt="h"
-                  />
-					<button>Registrar</button>
-                </div>
-			 </div>
-		  </div>
-		
-		 <!-- MISIÓN Y VISIÓN -->
-      <div>
-		  <div class="los-mas-vendidos aux-margin gap-bottom">
-        <span class="title">Misión y Visión</span>
-			  
-			   	<div class="card d-block w-50">
-
-                  <img
-                    src="imagenes/los_mas_vendidos/mision y vision_preview_rev_1.png"
-					   class="d-block w-100"
-                    alt="h"
-                  />
-                </div>
-			 </div>
-		  </div>
-		<!-- VALORES -->
-      <div>
-		  <div class="los-mas-vendidos aux-margin gap-bottom">
-        <span class="title">Valores</span>
-			  
-			   	<div class="card d-block w-50">
-
-                  <img
-                    src="imagenes/los_mas_vendidos/valores.png"
-					   class="d-block w-100"
-                    alt="h"
-                  />
-                </div>
-			 </div>
-		  </div>
-  
-	 <!-- FOOTER -->
+      <!-- FOOTER -->
       <div class="footer">
         <!-- TOP -->
         <div class="footer-top">
@@ -200,29 +242,32 @@
               <p class="footer-title">SIGUENOS EN:</p>
             </div>
 
-            <div class="footer-icono">
-              <img
-                src="./imagenes/iconos/facebook.svg"
-                alt="ícono de facebook"
-              />
-            </div>
+            <div class="margin-bottom-16 flex my-gap-4">
+              <div class="footer-icono center">
+                <img
+                  src="./imagenes/iconos/facebook.svg"
+                  alt="ícono de facebook"
+                />
+              </div>
 
-            <div class="footer-icono">
-              <img src="./imagenes/iconos/tiktok.svg" alt="ícono de tiktok" />
-            </div>
+              <div class="footer-icono center">
+                <img src="./imagenes/iconos/tiktok.svg" alt="ícono de tiktok" />
+              </div>
 
-            <div class="footer-icono">
-              <img
-                src="./imagenes/iconos/instagram.svg"
-                alt="ícono de instagram"
-              />
-            </div>
+              <div class="footer-icono center">
+                <img
+                  src="./imagenes/iconos/instagram.svg"
+                  alt="ícono de instagram"
+                />
+              </div>
 
-            <div class="footer-icono">
-              <img
-                src="./imagenes/iconos/whatsapp.svg"
-                alt="ícono de whatsapp"
-              />
+              <div class="footer-icono">
+                <img
+                  src="./imagenes/iconos/whatsapp.svg"
+                  alt="ícono de whatsapp"
+                  style="width: 16px; height: 16px"
+                />
+              </div>
             </div>
           </div>
 
@@ -231,16 +276,30 @@
               <p class="footer-title">MEDIOS DE PAGO:</p>
             </div>
 
-            <div class="footer-icono">
-              <img src="./imagenes/iconos/yape.svg" alt="ícono de yape" />
-            </div>
+            <div class="margin-bottom-16 flex my-gap-4">
+              <div class="footer-icono" style="width: 25px; height: 25px">
+                <img
+                  src="./imagenes/iconos/yape.svg"
+                  style="width: 25px; height: 25px"
+                  alt="ícono de yape"
+                />
+              </div>
 
-            <div class="footer-icono">
-              <img src="./imagenes/iconos/plin.png" alt="ícono de plin" />
-            </div>
+              <div class="footer-icono">
+                <img
+                  src="./imagenes/iconos/plin.png"
+                  style="width: 25px; height: 25px"
+                  alt="ícono de plin"
+                />
+              </div>
 
-            <div class="footer-icono">
-              <img src="./imagenes/iconos/bcp.png" alt="ícono de bcp" />
+              <div class="footer-icono" style="width: 35px; height: 20px">
+                <img
+                  src="./imagenes/iconos/bcp.png"
+                  alt="ícono de bcp"
+                  style="width: 35px; height: 20px"
+                />
+              </div>
             </div>
           </div>
         </div>

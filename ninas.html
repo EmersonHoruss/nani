@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-     <meta charset="utf-8" />
-    <title>Niñas</title>
+    <meta charset="utf-8" />
+    <title>index.html</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,27 +14,111 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icon@1.7.2/font/bootstrap-icons-css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="utilidades.css" />
   </head>
-   <body>
+
+  <body>
     <div class="page-wrapper">
-      <!-- HEADER -->
-      <div class="header fixed-top aux-padding">
-        <div class="my-navbar">
+      <!-- MOBILE HEADER -->
+      <div class="header fixed-top mb">
+        <div class="my-navbar padding-top-8 flex-space-between">
           <!-- LOGO -->
           <div class="menu-logo">
             <a href="./index.html">
               <img
                 src="./imagenes/logos/logo_color_v1.svg"
                 alt="danielito logo"
+                class="brand-size"
+              />
+            </a>
+          </div>
+
+          <div class="flex gap-6">
+            <!-- INICIAR SESION -->
+            <div class="menu-loggin">
+              <button class="btn btn-primary force-button-height">
+                <div class="center">
+                  <img
+                    src="./imagenes/iconos/usuario.svg"
+                    alt="icono de inicio de sesión"
+                    class="icon-size"
+                  />
+                </div>
+              </button>
+            </div>
+
+            <!-- CARRITO DE COMPRAS -->
+            <div class="menu-carrito">
+              <button type="button" class="btn btn-outline position-relative">
+                <img
+                  src="./imagenes/iconos/carrito_de_compra.svg"
+                  alt="icono de carrito de compras"
+                  class="icon-size"
+                />
+                <!-- <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1
+                  <span class="visually-hidden">unread messages</span>
+                </span> -->
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUSCAR -->
+        <div class="menu-search padding-top-8">
+          <div class="input-group">
+            <span class="input-group-text">
+              <img
+                src="./imagenes/iconos/lupa.svg"
+                class="icon-size"
+                alt="icono de buscar"
+              />
+            </span>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Buscar"
+              placeholder="Buscar"
+            />
+          </div>
+        </div>
+
+        <div class="menu-items">
+          <a class="menu-item" href="./bebes.html">Bebes</a>
+          <a class="menu-item" href="./ninos.html">Niños</a>
+          <a class="menu-item my-active" href="./ninas.html">Niñas</a>
+          <a class="menu-item" href="./nosotros.html">Nosotros</a>
+          <a class="menu-item" href="./encuentranos.html"> Encuentranos </a>
+        </div>
+      </div>
+
+      <!-- NO MOBILE HEADER -->
+      <div class="header fixed-top no-mb">
+        <div class="my-navbar padding-top-8 flex-space-between">
+          <!-- LOGO -->
+          <div class="menu-logo">
+            <a href="./index.html">
+              <img
+                src="./imagenes/logos/logo_color_v1.svg"
+                alt="danielito logo"
+                class="brand-size"
               />
             </a>
           </div>
 
           <!-- BUSCAR -->
-          <div class="menu-search">
+          <div class="menu-search flex-grow">
             <div class="input-group">
               <span class="input-group-text">
-                <img src="./imagenes/iconos/lupa.svg" alt="icono de buscar" />
+                <img
+                  src="./imagenes/iconos/lupa.svg"
+                  class="icon-size"
+                  alt="icono de buscar"
+                />
               </span>
               <input
                 type="text"
@@ -45,218 +129,50 @@
             </div>
           </div>
 
-          <!-- INICIAR SESION -->
-          <div class="menu-loggin">
-            <button class="btn btn-primary">
-              <img
-                src="./imagenes/iconos/usuario.svg"
-                alt="icono de inicio de sesión"
-              />
-              Iniciar sesión
-            </button>
-          </div>
+          <div class="flex gap-6">
+            <!-- INICIAR SESION -->
+            <div class="menu-loggin">
+              <button class="btn btn-primary force-button-height">
+                <div class="center flex">
+                  <img
+                    src="./imagenes/iconos/usuario.svg"
+                    alt="icono de inicio de sesión"
+                    class="icon-size"
+                  />
+                  <span class="display-992">Iniciar sesión</span>
+                </div>
+              </button>
+            </div>
 
-          <!-- CARRITO DE COMPRAS -->
-          <div class="menu-carrito">
-            <button type="button" class="btn btn-outline position-relative">
-              <img
-                src="./imagenes/iconos/carrito_de_compra.svg"
-                alt="icono de carrito de compras"
-              />
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-              >
-                1
-                <span class="visually-hidden">unread messages</span>
-              </span>
-            </button>
+            <!-- CARRITO DE COMPRAS -->
+            <div class="menu-carrito">
+              <button type="button" class="btn btn-outline position-relative">
+                <img
+                  src="./imagenes/iconos/carrito_de_compra.svg"
+                  alt="icono de carrito de compras"
+                  class="icon-size"
+                />
+                <!-- <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  1
+                  <span class="visually-hidden">unread messages</span>
+                </span> -->
+              </button>
+            </div>
           </div>
         </div>
+
         <div class="menu-items">
           <a class="menu-item" href="./bebes.html">Bebes</a>
           <a class="menu-item" href="./ninos.html">Niños</a>
-          <a class="menu-item" href="./ninas.html">Niñas</a>
+          <a class="menu-item my-active" href="./ninas.html">Niñas</a>
           <a class="menu-item" href="./nosotros.html">Nosotros</a>
-          <a class="menu-item" href="./encuentranos.html">Encuentranos</a>
+          <a class="menu-item" href="./encuentranos.html"> Encuentranos </a>
         </div>
       </div>
 
-      <div class="after-fixed"></div>
-		
-	  <!-- CONJUNTO -->
-      <div>
-		  <div class="los-mas-vendidos aux-margin gap-bottom">
-        <span class="title">Polera de oso</span>
-			  
-			  <div class="card d-block w-50">
-                  <img
-                    src="imagenes/los_mas_vendidos/modelo 2_preview_rev_1.png"
-					   class="d-block w-50"
-                    alt="Polera de dos oso"
-                  />
-                </div>
-
-        <div class="los-mas-vendidos-carousel carousel carousel-dark slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="content">
-                <div class="card">
-                  <img
-                    src="imagenes/los_mas_vendidos/polera 2_preview_rev_1.png"
-                    alt="Polera color crema y verde"
-                  />
-                  <p>Polera color crema y verde</p>
-                  <button>Ver más</button>
-                </div>
-
-                <div class="card">
-                  <img
-                    src="imagenes/los_mas_vendidos/polera 3_preview_rev_1.png"
-                    alt="Polera blanca y celeste"
-                  />
-                  <p>Polera blanca y celeste</p>
-                  <button>Ver más</button>
-                </div>
-
-                <div class="card">
-                  <img
-                    src="imagenes/los_mas_vendidos/polera 4_preview_rev_1.png"
-                    alt="Polera gris y negra"
-                  />
-                  <p>Polera gris y negra</p>
-                  <button>Ver más</button>
-                </div>
-
-                <div class="card">
-                  <img
-                    src="imagenes/los_mas_vendidos/polera 5_preview_rev_1.png"
-                    alt="Polera marrón y caramelo"
-                  />
-                  <p>Polera marrón y caramelo</p>
-                  <button>Ver más</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-		
-		</div>
-
-    
-      <!-- LOS MÁS VENDIDOS -->
-      <div class="los-mas-vendidos aux-margin gap-bottom">
-        <span class="title">Los más vendidos</span>
-
-        <div class="los-mas-vendidos-carousel carousel carousel-dark slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="content">
-                <div class="card">
-                  <img
-                    src="imagenes/los_mas_vendidos/polera_preview_rev_1.png"
-                    alt="sudadera gris pizarra y blanco"
-                  />
-                  <p>Sudadera gris pizarra y blanco</p>
-                  <button>Ver más</button>
-                </div>
-
-                <div class="card">
-                  <img
-                    src="imagenes/los_mas_vendidos/conjunto_vestido_jeans.png"
-                    alt="camiseta hombre araña"
-                  />
-                  <p>Camiseta hombre araña</p>
-                  <button>Ver más</button>
-                </div>
-
-                <div class="card">
-                  <img
-                    src="./imagenes/los_mas_vendidos/sudadera_blanco_con_estampado.png"
-                    alt="sudadera blanca con estampado"
-                  />
-                  <p>Sudadera blanca con estampado</p>
-                  <button>Ver más</button>
-                </div>
-
-                <div class="card">
-                  <img
-                    src="imagenes/los_mas_vendidos/sudadera_rosa_con_estampado.png"
-                    alt="polera de color crema y verde"
-                  />
-                  <p>Polera de color crema y verde</p>
-                  <button>Ver más</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- REGISTRATE YA -->
-      <div class="registrate-ya aux-margin gap-bottom">
-        <!-- ZONA IZQUIERDA -->
-        <div class="registrate-ya-left">
-          <img
-            src="./imagenes/sueltas/nina_de_registrate_ya.svg"
-            alt="niña auspiciadora"
-          />
-        </div>
-
-        <!-- ZONA DERECHA -->
-        <div class="registrate-ya-right">
-          <span>¡REGISTRATE YA!</span>
-          <p>
-            mantente al tanto de nuestras emocionates <br />
-            ofertas
-          </p>
-          <div>
-            <button class="btn btn-primary">
-              <img
-                src="./imagenes/iconos/usuario.svg"
-                alt="icono de registro"
-              />
-              Registrarme
-            </button>
-          </div>
-        </div>
-      </div>
+      <div></div>
 
       <!-- FOOTER -->
       <div class="footer">
@@ -326,29 +242,32 @@
               <p class="footer-title">SIGUENOS EN:</p>
             </div>
 
-            <div class="footer-icono">
-              <img
-                src="./imagenes/iconos/facebook.svg"
-                alt="ícono de facebook"
-              />
-            </div>
+            <div class="margin-bottom-16 flex my-gap-4">
+              <div class="footer-icono center">
+                <img
+                  src="./imagenes/iconos/facebook.svg"
+                  alt="ícono de facebook"
+                />
+              </div>
 
-            <div class="footer-icono">
-              <img src="./imagenes/iconos/tiktok.svg" alt="ícono de tiktok" />
-            </div>
+              <div class="footer-icono center">
+                <img src="./imagenes/iconos/tiktok.svg" alt="ícono de tiktok" />
+              </div>
 
-            <div class="footer-icono">
-              <img
-                src="./imagenes/iconos/instagram.svg"
-                alt="ícono de instagram"
-              />
-            </div>
+              <div class="footer-icono center">
+                <img
+                  src="./imagenes/iconos/instagram.svg"
+                  alt="ícono de instagram"
+                />
+              </div>
 
-            <div class="footer-icono">
-              <img
-                src="./imagenes/iconos/whatsapp.svg"
-                alt="ícono de whatsapp"
-              />
+              <div class="footer-icono">
+                <img
+                  src="./imagenes/iconos/whatsapp.svg"
+                  alt="ícono de whatsapp"
+                  style="width: 16px; height: 16px"
+                />
+              </div>
             </div>
           </div>
 
@@ -357,16 +276,30 @@
               <p class="footer-title">MEDIOS DE PAGO:</p>
             </div>
 
-            <div class="footer-icono">
-              <img src="./imagenes/iconos/yape.svg" alt="ícono de yape" />
-            </div>
+            <div class="margin-bottom-16 flex my-gap-4">
+              <div class="footer-icono" style="width: 25px; height: 25px">
+                <img
+                  src="./imagenes/iconos/yape.svg"
+                  style="width: 25px; height: 25px"
+                  alt="ícono de yape"
+                />
+              </div>
 
-            <div class="footer-icono">
-              <img src="./imagenes/iconos/plin.png" alt="ícono de plin" />
-            </div>
+              <div class="footer-icono">
+                <img
+                  src="./imagenes/iconos/plin.png"
+                  style="width: 25px; height: 25px"
+                  alt="ícono de plin"
+                />
+              </div>
 
-            <div class="footer-icono">
-              <img src="./imagenes/iconos/bcp.png" alt="ícono de bcp" />
+              <div class="footer-icono" style="width: 35px; height: 20px">
+                <img
+                  src="./imagenes/iconos/bcp.png"
+                  alt="ícono de bcp"
+                  style="width: 35px; height: 20px"
+                />
+              </div>
             </div>
           </div>
         </div>
