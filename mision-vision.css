@@ -1,0 +1,84 @@
+.mision-vision {
+  margin-top: 4.5rem;
+  width: 100%;
+  padding: 0 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card-mision-vision {
+  background-color: rgb(250, 240, 220);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.card-mision-vision-img {
+  width: 100%;
+  height: 200px;
+}
+
+.card-mision-vision-img img {
+  width: 180px;
+  height: 100%;
+}
+
+.card-mision-vision-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-mision-vision-content-title {
+  font-size: 1.2rem;
+  color: green;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid green;
+}
+
+@media (min-width: 768px) {
+  .card-mision-vision {
+    flex-direction: row; /* Cambia la disposición a horizontal */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+
+  .card-mision-vision-img {
+    width: 50%; /* La imagen ocupa la mitad de la tarjeta */
+    height: auto;
+  }
+
+  .card-mision-vision-content {
+    width: 50%; /* El contenido ocupa la otra mitad */
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mision-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-mision-vision {
+    width: 90%; /* Ajusta el ancho en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-mision-vision {
+    width: 100%; /* En pantallas pequeñas ocupa el ancho completo */
+  }
+
+  .card-mision-vision-img {
+    height: 350px; /* Reduce la altura de la imagen en dispositivos móviles */
+  }
+}
