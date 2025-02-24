@@ -1,0 +1,70 @@
+.registrate-ya {
+  display: flex;
+  margin-top: 4.5rem;
+  padding: 0 4px;
+}
+
+.registrate-ya-left img {
+  width: 100%;
+}
+
+.registrate-ya-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.registrate-ya-right span {
+  font-size: 1.8rem;
+  color: green;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.registrate-ya-right p {
+  font-size: 1rem;
+  color: black;
+  font-weight: 600;
+}
+
+.registrate-ya button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registrate-ya-right button img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+/* Pantallas iguales o mayores a 576px (pequeño - sm) */
+/* Añade aquí los estilos para pantallas pequeñas */
+@media (min-width: 576px) {
+  .registrate-ya {
+    padding: 0 1.5rem;
+    /* padding-left: 5rem; */
+  }
+}
+
+/* Pantallas iguales o mayores a 768px (mediano - md) */
+/* Añade aquí los estilos para pantallas medianas */
+@media (min-width: 768px) {
+    .registrate-ya{
+        padding-left: 5rem;
+    }
+}
+
+/* Pantallas iguales o mayores a 992px (grande - lg) */
+/* Añade aquí los estilos para pantallas grandes */
+@media (min-width: 992px) {
+    .registrate-ya{
+        padding-left: 8rem;
+    }
+}
+
+/* Pantallas iguales o mayores a 1200px (extra grande - xl) */
+/* Añade aquí los estilos para pantallas extra grandes */
+@media (min-width: 1200px) {
+}
