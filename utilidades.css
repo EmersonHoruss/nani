@@ -28,12 +28,24 @@
   padding-top: 12px;
 }
 
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
 .flex-space-between {
   justify-content: space-between;
 }
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.my-gap-4{
+  gap: 4px;
 }
 
 .display-992 {
