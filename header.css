@@ -24,7 +24,17 @@
   text-decoration: none;
   font-size: 1rem;
   color: green;
+  padding: 0.5rem 1rem;
   font-weight: 700;
+}
+
+.menu-item:hover,
+.my-active {
+  color: white !important;
+  background-color: green !important;
+  padding: 0.5rem 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .no-mb {
