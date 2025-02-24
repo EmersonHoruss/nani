@@ -23,34 +23,34 @@ window.addEventListener("resize", adjustCarouselMargin);
 document.addEventListener("DOMContentLoaded", function () {
   const products = [
     {
-      src: "./imagenes/los_mas_vendidos/conjunto_vestido_jeans.png",
+      src: "./imagenes/los_mas_vendidos/ninas/conjunto_vestido_jeans.png",
       alt: "Conjunto de vestido jeans",
       name: "Conjunto de vestido jeans",
     },
     {
-      src: "./imagenes/los_mas_vendidos/sudadera_rosa_con_estampado.png",
+      src: "./imagenes/los_mas_vendidos/ninas/sudadera_rosa_con_estampado.png",
       alt: "Sudadera rosa con estampado",
       name: "Sudadera rosa con estampado",
     },
     {
-      src: "./imagenes/los_mas_vendidos/sudadera_blanco_con_estampado.png",
+      src: "./imagenes/los_mas_vendidos/ninos/sudadera_blanco_con_estampado.png",
       alt: "Sudadera blanco con estampado",
       name: "Sudadera blanco con estampado",
     },
     {
-      src: "./imagenes/los_mas_vendidos/polera_de_color_naranja.svg",
+      src: "./imagenes/los_mas_vendidos/ninos/polera_de_color_naranja.svg",
       alt: "Polera de color naranja",
       name: "Polera de color naranja",
     },
     {
-      src: "./imagenes/los_mas_vendidos/polera_de_color_naranja2.svg",
-      alt: "Polera de color naranja 2",
-      name: "Polera de color naranja 2",
+      src: "./imagenes/los_mas_vendidos/ninos/polera.jpg",
+      alt: "Polera de gatito",
+      name: "Polera de gatito",
     },
     {
-      src: "./imagenes/los_mas_vendidos/polera_de_color_naranja3.svg",
-      alt: "Polera de color naranja 3",
-      name: "Polera de color naranja 3",
+      src: "./imagenes/los_mas_vendidos/ninos/polo_preview_rev_1.png",
+      alt: "Polo de spiderman",
+      name: "Polo de spiderman",
     },
   ];
 
