@@ -1,0 +1,82 @@
+.los-mas-vendidos {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.los-mas-vendidos button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.los-mas-vendidos-content {
+  margin: 0 1rem;
+  flex-grow: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+}
+
+.los-mas-vendidos-content-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.los-mas-vendidos-content-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+.los-mas-vendidos-content-card p {
+  margin: 10px 0;
+}
+
+.los-mas-vendidos-content-card button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.los-mas-vendidos-content-card:hover {
+  transform: scale(1.05);
+}
+
+/* Pantallas iguales o mayores a 576px (pequeño - sm) */
+/* Añade aquí los estilos para pantallas pequeñas */
+@media (min-width: 576px) {
+  .los-mas-vendidos {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Pantallas iguales o mayores a 768px (mediano - md) */
+/* Añade aquí los estilos para pantallas medianas */
+@media (min-width: 768px) {
+}
+
+/* Pantallas iguales o mayores a 992px (grande - lg) */
+/* Añade aquí los estilos para pantallas grandes */
+@media (min-width: 992px) {
+}
+
+/* Pantallas iguales o mayores a 1200px (extra grande - xl) */
+/* Añade aquí los estilos para pantallas extra grandes */
+@media (min-width: 1200px) {
+}
