@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 0 4px;
   gap: 1.5rem;
 }
 
@@ -18,6 +18,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+
+.auth-img {
+  display: none;
 }
 
 .auth-img img {
@@ -84,4 +88,31 @@ input {
 
 .toggle-auth a:hover {
   text-decoration: underline;
+}
+
+/* Pantallas iguales o mayores a 576px (pequeño - sm) */
+/* Añade aquí los estilos para pantallas pequeñas */
+@media (min-width: 576px) {
+  .auth-container {
+    padding: 0 1.5rem;
+  }
+
+  .auth-img {
+    display: block;
+  }
+}
+
+/* Pantallas iguales o mayores a 768px (mediano - md) */
+/* Añade aquí los estilos para pantallas medianas */
+@media (min-width: 768px) {
+}
+
+/* Pantallas iguales o mayores a 992px (grande - lg) */
+/* Añade aquí los estilos para pantallas grandes */
+@media (min-width: 992px) {
+}
+
+/* Pantallas iguales o mayores a 1200px (extra grande - xl) */
+/* Añade aquí los estilos para pantallas extra grandes */
+@media (min-width: 1200px) {
 }
